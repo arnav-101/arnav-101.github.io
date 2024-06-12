@@ -169,6 +169,17 @@ header ul li a {
     transition: opacity 0.4s ease-in;
 }
 
+.list-item.active {
+    color: var(--dark-accent);
+    opacity: 1;
+}
+
+.list-item.active:hover a {
+    color: var(--dark-accent);
+    opacity: 1;
+    text-decoration: none;
+}
+
 .socials {
     color: var(--dark-primary);
 }
