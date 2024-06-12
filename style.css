@@ -155,6 +155,7 @@
 body {
     background-color: var(--dark-background);
     color: var(--dark-text);
+    overflow-x: hidden;
 }
 
 header {
@@ -253,6 +254,7 @@ header ul li a {
 
 
 .section-heading {
+    font-family: var(--head-txt);
     color: var(--dark-accent);
     font-weight: 800;
     position: relative;
@@ -280,20 +282,6 @@ header ul li a {
 
 .about-me-name {
     color: var(--dark-primary);
-}
-
-.download-cv {
-    color: #fff;
-    background-color: var(--dark-secondary);
-    transition: transform 0.2s ease-in,
-                background-color 0.2s ease-in,
-                color 0.2s ease-in;
-}
-
-.download-cv:hover {
-    background-color: var(--dark-secondary-600);
-    transform: translateY(-5px);
-    color: #000;
 }
 
 
