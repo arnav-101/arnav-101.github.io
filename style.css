@@ -149,6 +149,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inconsolata', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -196,6 +197,12 @@ header ul li a {
     z-index: 100;
 }
 
+/* .hamburger.active span {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+} */
+
 .hamburger.active span:first-child {
     top: 50%;
     transform: rotate(45deg);
@@ -222,6 +229,14 @@ header ul li a {
     width: 300px;
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
+    z-index: 1000;
+}
+
+.hamburger.active {
+    position: fixed;
+    top: 16px;
+    right: 32px;
+    z-index: 9999999;
 }
 
 .ham-menu.active {
@@ -229,6 +244,57 @@ header ul li a {
     right: 0;
 }
 
+.arnav-heading span {
+    color: var(--dark-accent);
+}
+.arnav-ability span {
+    color: var(--dark-primary);
+}
+
+
+.section-heading {
+    color: var(--dark-accent);
+    font-weight: 800;
+    position: relative;
+}
+
+.section-heading::before,
+.section-heading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark-primary);
+}
+
+.section-heading::before {
+    transform: translate(-110%, -50%);
+}
+.section-heading::after {
+    transform: translate(110%, -50%);
+}
+
+
+
+.about-me-name {
+    color: var(--dark-primary);
+}
+
+.download-cv {
+    color: #fff;
+    background-color: var(--dark-secondary);
+    transition: transform 0.2s ease-in,
+                background-color 0.2s ease-in,
+                color 0.2s ease-in;
+}
+
+.download-cv:hover {
+    background-color: var(--dark-secondary-600);
+    transform: translateY(-5px);
+    color: #000;
+}
 
 
 

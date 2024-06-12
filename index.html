@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>arnav raj</title>
+    <title>arnav-101</title>
+    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,18 +24,22 @@
             </div>
 
             <ul class="hidden md:flex gap-4 md:gap-6 text-lg md:text-lg lg:text-xl">
-                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">Home</a></li>
-                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">About</a></li>
-                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">Projects</a>
+                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                        href="#home">Home</a></li>
+                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                        href="#about">About</a></li>
+                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                        href="#projects">Projects</a>
                 </li>
-                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">Journey</a></li>
-                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">Contact</a></li>
+                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                        href="#journey">Journey</a></li>
+                <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                        href="#contact">Contact</a></li>
             </ul>
 
             <div class="socials hidden sm:flex gap-4 md:gap-6">
                 <a class="opacity-50 transition-opacity text-lg md:text-lg lg:text-xl hover:opacity-100"
-                    href="https://github.com/arnav-101" target="_blank"><i
-                        class="fa-brands fa-github"></i></a>
+                    href="https://github.com/arnav-101" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a class="opacity-50 transition-opacity text-lg md:text-lg lg:text-xl hover:opacity-100"
                     href="https://discord.com/users/908185207163744297" target="_blank"><i
                         class="fa-brands fa-discord"></i></a>
@@ -54,22 +59,26 @@
 
             <div class="ham-menu flex flex-col gap-9 items-center md:hidden">
                 <ul class="flex flex-col px-4 pt-28 items-center gap-4 md:gap-6 text-xl">
-                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">Home</a>
+                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                            href="#home">Home</a>
                     </li>
-                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">About</a>
+                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                            href="#about">About</a>
                     </li>
-                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">Projects</a>
+                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                            href="#projects">Projects</a>
                     </li>
-                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">Journey</a>
+                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                            href="#journey">Journey</a>
                     </li>
-                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4" href="#">Contact</a>
+                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                            href="#contact">Contact</a>
                     </li>
                 </ul>
 
                 <div class="socials px-4 items-center flex gap-4 sm:hidden">
                     <a class="opacity-50 transition-opacity text-xl hover:opacity-100"
-                        href="https://github.com/arnav-101" target="_blank"><i
-                            class="fa-brands fa-github"></i></a>
+                        href="https://github.com/arnav-101" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a class="opacity-50 transition-opacity text-xl hover:opacity-100"
                         href="https://discord.com/users/908185207163744297" target="_blank"><i
                             class="fa-brands fa-discord"></i></a>
@@ -88,6 +97,49 @@
 
 
     </header>
+
+
+    <section
+        class="flex flex-col gap-10 items-center justify-center h-96 md:h-screen sm:flex-row lg:justify-center lg:gap-32" id="home">
+        <div>
+            <img class="w-48 rounded-full sm:w-56 lg:w-72" src="assets/favicon.jpg" alt="">
+        </div>
+        <div class="flex flex-col md:gap-8">
+            <div class="arnav-heading text-4xl tracking-widest font-extrabold sm:text-6xl lg:text-8xl">
+                arnav.<span>is()</span></div>
+            <div class="arnav-ability text-xl sm:text-3xl lg:text-5xl"><span id="dynamicText"></span></div>
+        </div>
+    </section>
+
+    <section class="mt-24 flex flex-col items-center mx-11" id="about">
+        <div class="section-heading text-2xl sm:text-4xl md:text-5xl lg:text-7xl">About Me</div>
+
+        <div class="flex flex-col md:flex-row md:justify-center gap-14 mt-14">
+            <div class="flex flex-col items-center justify-center">
+                <img class="w-60 aspect-video object-cover rounded-lg sm:w-80 md:w-72 md:aspect-square"
+                    src="assets/favicon.jpg" alt="">
+                <div class="about-me-name text-3xl font-semibold md:hidden">Arnav Raj Singh</div>
+            </div>
+
+            <div class="flex flex-col gap-7 md:w-1/2">
+                <div class="about-me-name hidden md:block text-3xl font-semibold md:text-3xl lg:text-4xl">Arnav Raj Singh</div>
+                <div class="flex flex-col gap-6 justify-between h-full">
+                    <div class="text-justify opacity-80 md:text-xl">
+                        I'm Arnav, a 15-year-old front-end developer passionate about coding and technology. Currently
+                        in
+                        11th grade, I love exploring new programming languages and frameworks. I'm an enthusiastic
+                        learner
+                        who enjoys continuously improving my skills every day.
+                    </div>
+
+                    <div class="flex justify-center md:justify-start">
+                        <a class="download-cv font-extrabold tracking-widest px-2 py-1 md:px-4 md:py-2 rounded-xl shadow-2xl"
+                            href="">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
