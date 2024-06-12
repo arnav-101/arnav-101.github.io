@@ -213,6 +213,7 @@ header ul li a {
 }
 
 .ham-menu {
+    overflow: hidden;
     position: fixed;
     top: 0;
     right: -300px;
