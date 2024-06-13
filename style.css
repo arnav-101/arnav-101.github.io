@@ -557,6 +557,37 @@ section.home {
 
 
 
+.hidden-animation {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all .5s ease-in-out;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-animation {
+        transition: none;
+    }
+}
+
+.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
