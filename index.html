@@ -198,7 +198,8 @@
         <!-- About Section -->
         <section class="about h-screen min-h-screen mt-20 mx-6 sm:mx-24 lg:mx-48" id="about">
             <div class="h-full flex flex-col items-center justify-center">
-                <div class="hidden-animation section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">
+                <div
+                    class="hidden-animation section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">
                     About Me</div>
 
                 <div class="mt-14 flex flex-col md:flex-row gap-4 sm:gap-12 items-center justify-center md:items-start">
@@ -229,7 +230,8 @@
         <!-- Skills Section -->
         <section class="skill h-max min-h-screen mt-20 mx-6 sm:mx-24 lg:mx-48" id="skills">
             <div class="flex flex-col items-center justify-center">
-                <div class="hidden-animation section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">
+                <div
+                    class="hidden-animation section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">
                     Skill Stack</div>
 
                 <div class="mt-14 flex flex-col items-center gap-28">
@@ -280,7 +282,9 @@
         <!-- Projects Section -->
         <section class="project md:h-screen mt-20 mx-6 sm:mx-24 lg:mx-48" id="projects">
             <div class="flex h-full flex-col items-center justify-center">
-                <div class="hidden-animation section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">My
+                <div
+                    class="hidden-animation section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">
+                    My
                     Projects</div>
 
                 <div class="project-wrapper w-full justify-center items-center gap-3 mt-20 lg:gap-0">
@@ -330,21 +334,62 @@
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </div>
                         </a>
-                        <a class="hidden-animation hidden md:block" href="#">
+                        <a class="hidden md:block" href="#">
                             <div
                                 class="view-project text-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 cursor-pointer opacity-0 text-center font-bold tracking-wider">
                                 View <br> Project</div>
                         </a>
                     </div>
+
                 </div>
 
-                <a class="hidden-animation " href="https://github.com/arnav-101?tab=repositories">
+                <a class="hidden-animation" target="_blank" href="https://github.com/arnav-101?tab=repositories">
                     <div
                         class="view-more-project flex items-center gap-2 mt-14 opacity-50 cursor-pointer hover:opacity-100transition-all">
                         <div class="hover:underline hover:underline-offset-4 ">View More Projects</div>
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </div>
                 </a>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="mt-32" id="contact">
+            <div class="flex items-center justify-center px-14 py-7 bg-slate-800">
+                <div class="flex flex-col sm:flex-row sm:gap-32 gap-16">
+                    <div class="flex flex-col gap-4 items-center">
+                        <div class="tracking-wide text-center font-bold sm:text-lg md:text-xl lg:text-2xl">Contact Me @:</div>
+                        <div>arnavsinghraj.25@gmail.com</div>
+
+                        <div class="mt-4 flex flex-col gap-4">
+                            <div class="tracking-wide text-center font-bold sm:text-base">My Socials:</div>
+                            <div class="socials gap-4">
+                                <a class="opacity-50 transition-opacity text-lg hover:opacity-100"
+                                    href="https://github.com/arnav-101" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a class="opacity-50 transition-opacity text-lg hover:opacity-100"
+                                    href="https://discord.com/users/908185207163744297" target="_blank"><i
+                                        class="fa-brands fa-discord"></i></a>
+                                <a class="opacity-50 transition-opacity text-lg hover:opacity-100"
+                                    href="https://open.spotify.com/user/31bgsfxkvwz5ubjvwxcanfvy2ufe" target="_blank"><i
+                                        class="fa-brands fa-spotify"></i></a>
+                                <a class="opacity-50 transition-opacity text-lg hover:opacity-100"
+                                    href="https://www.instagram.com/arnavrajsingh39/?next=%2F" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col gap-4 items-center">
+                        <div class="tracking-wide text-center font-bold sm:text-lg md:text-xl lg:text-2xl">What it took to make this portfolio:</div>
+                        <div class="flex flex-col gap-4 items-center">
+                            <div class="text-xs underline underline-offset-4 sm:text-base">HTML & CSS</div>
+                            <div class="text-xs underline underline-offset-4 sm:text-base">Tailwind CSS</div>
+                            <div class="text-xs underline underline-offset-4 sm:text-base">Java Script</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
