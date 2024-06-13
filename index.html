@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="overflow-x-hidden">
+    <div class="overflow-x-hidden overflow-y-hidden">
         <header class="px-4 py-5 sm:px-0 w-full">
             <nav class="flex items-center justify-between sm:justify-around">
                 <div class="nav-heading font-medium md:text-xl lg:text-2xl tracking-wider">
@@ -229,25 +229,44 @@
         <!-- Projects Section -->
         <section class="about h-screen mt-20 mx-6 sm:mx-24 lg:mx-48" id="projects">
             <div class="flex h-full flex-col items-center justify-center">
-                <div class="section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">My Projects</div>
+                <div class="section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">My
+                    Projects</div>
 
                 <div class="project-wrapper w-full justify-center items-center gap-3 mt-20 lg:gap-0">
                     <div class="project-box">
-                        <a href="#">
+                        <a class="small-screen-link flex h-full items-end justify-end md:hidden" href="">
+                            <div class="flex items-center gap-2 mr-4 mb-4">
+                                <div class="underline underline-offset-4">View Project</div>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                        </a>
+                        <a class="hidden md:block" href="#">
                             <div
                                 class="view-project text-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 cursor-pointer opacity-0 text-center font-bold tracking-wider">
                                 View <br> Project</div>
                         </a>
                     </div>
                     <div class="project-box">
-                        <a href="#">
+                        <a class="small-screen-link flex h-full items-end justify-end md:hidden" href="">
+                            <div class="flex items-center gap-2 mr-4 mb-4">
+                                <div class="underline underline-offset-4">View Project</div>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                        </a>
+                        <a class="hidden md:block" href="#">
                             <div
                                 class="view-project text-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 cursor-pointer opacity-0 text-center font-bold tracking-wider">
                                 View <br> Project</div>
                         </a>
                     </div>
                     <div class="project-box">
-                        <a href="#">
+                        <a class="small-screen-link flex h-full items-end justify-end md:hidden" href="">
+                            <div class="flex items-center gap-2 mr-4 mb-4">
+                                <div class="underline underline-offset-4">View Project</div>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                        </a>
+                        <a class="hidden md:block" href="#">
                             <div
                                 class="view-project text-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 cursor-pointer opacity-0 text-center font-bold tracking-wider">
                                 View <br> Project</div>
@@ -256,7 +275,8 @@
                 </div>
 
                 <a class="" href="https://github.com/arnav-101?tab=repositories">
-                    <div class="view-more-project flex items-center gap-2 mt-14 opacity-50 cursor-pointer hover:opacity-100transition-all">
+                    <div
+                        class="view-more-project flex items-center gap-2 mt-14 opacity-50 cursor-pointer hover:opacity-100transition-all">
                         <div class="hover:underline hover:underline-offset-4 ">View More Projects</div>
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </div>
@@ -296,7 +316,7 @@
 
 
 
-    <script src="app.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
