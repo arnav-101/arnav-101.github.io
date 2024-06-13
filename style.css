@@ -587,7 +587,38 @@ section.home {
 
 
 
+.loader-bubble {
+    width: 50px;
+    height: 50px;
 
+    border-radius: 50%;
+    animation: loader 1s ease-in-out infinite alternate;
+}
+
+.loader-bubble:first-child {
+    background-color: #ff6868;
+    animation-delay: -0.333333s;
+}
+.loader-bubble:nth-child(2) {
+    background-color: #ff7f7f;
+    animation-delay: 0s;
+}
+.loader-bubble:nth-child(3) {
+    background-color: #ff9d9d;
+    animation-delay: 0.333s;
+}
+
+@keyframes loader {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 
