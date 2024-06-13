@@ -29,10 +29,10 @@
                     <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
                             href="#about">About</a></li>
                     <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
+                            href="#skills">Skills</a></li>
+                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
                             href="#projects">Projects</a>
                     </li>
-                    <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
-                            href="#journey">Journey</a></li>
                     <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
                             href="#contact">Contact</a></li>
                 </ul>
@@ -66,10 +66,10 @@
                                 href="#about">About</a>
                         </li>
                         <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
-                                href="#projects">Projects</a>
+                                href="#skills">Skills</a>
                         </li>
                         <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
-                                href="#journey">Journey</a>
+                                href="#projects">Projects</a>
                         </li>
                         <li class="list-item"><a class="opacity-70 hover:opacity-100 hover:underline underline-offset-4"
                                 href="#contact">Contact</a>
@@ -196,7 +196,7 @@
 
 
         <!-- About Section -->
-        <section class="about h-screen mt-20 mx-6 sm:mx-24 lg:mx-48" id="about">
+        <section class="about h-screen min-h-screen mt-20 mx-6 sm:mx-24 lg:mx-48" id="about">
             <div class="h-full flex flex-col items-center justify-center">
                 <div class="section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">
                     About Me</div>
@@ -226,8 +226,59 @@
         </section>
 
 
+        <!-- Skills Section -->
+        <section class="skill h-max min-h-screen mt-20 mx-6 sm:mx-24 lg:mx-48" id="skills">
+            <div class="flex flex-col items-center justify-center">
+                <div class="section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">
+                    Skill Stack</div>
+
+                <div class="mt-14 flex flex-col items-center gap-28">
+                    <div
+                        class="skill-circle-container mx-auto front-end flex flex-wrap justify-center items-center gap-12">
+                        <div class="circlular-progress flex justify-center items-center">
+                            <span>
+                                <div class="text-3xl font-bold">94%</div>
+                                <div class="text-xl tracking-widest">HTML</div>
+                            </span>
+                        </div>
+                        <div class="circlular-progress flex justify-center items-center">
+                            <span>
+                                <div class="text-3xl font-bold">83%</div>
+                                <div class="text-xl tracking-widest">CSS</div>
+                            </span>
+                        </div>
+                        <div class="circlular-progress flex justify-center items-center">
+                            <span>
+                                <div class="text-3xl font-bold">20%</div>
+                                <div class="text-xl tracking-widest">JS</div>
+                            </span>
+                        </div>
+                        <div class="circlular-progress flex justify-center items-center">
+                            <span>
+                                <div class="text-3xl font-bold">56%</div>
+                                <div class="text-xl tracking-widest">Tailwind</div>
+                            </span>
+                        </div>
+                        <div class="circlular-progress flex justify-center items-center">
+                            <span>
+                                <div class="text-3xl font-bold">17%</div>
+                                <div class="text-xl tracking-widest">React</div>
+                            </span>
+                        </div>
+                        <div class="circlular-progress flex justify-center items-center">
+                            <span>
+                                <div class="text-3xl font-bold">45%</div>
+                                <div class="text-xl tracking-widest">Python</div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Projects Section -->
-        <section class="about h-screen mt-20 mx-6 sm:mx-24 lg:mx-48" id="projects">
+        <section class="project md:h-screen mt-20 mx-6 sm:mx-24 lg:mx-48" id="projects">
             <div class="flex h-full flex-col items-center justify-center">
                 <div class="section-header text-xl md:text-3xl lg:text-6xl font-medium tracking-wider items-center">My
                     Projects</div>
@@ -283,6 +334,8 @@
                 </a>
             </div>
         </section>
+
+
 
 
 
