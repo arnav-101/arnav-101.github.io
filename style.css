@@ -403,6 +403,11 @@ section.home {
     transition: opacity 0.3s ease-in-out;
 }
 
+.project-box:nth-child(1) {
+    background: url(assets/E-Commerce\ Website.png);
+    background-size: cover;
+}
+
 @media screen and (min-width: 1024px) {
     .project-box::after {
         position: absolute;
