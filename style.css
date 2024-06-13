@@ -161,6 +161,7 @@ body {
 header {
     font-family: var(--des-txt);
     background-color: var(--dark-background-900);
+    z-index: 3;
 }
 
 .nav-heading span{
@@ -279,9 +280,106 @@ header ul li a {
 }
 
 
+section.home {
+    height: 87vh;
+    background-attachment: fixed;
+}
 
-.about-me-name {
-    color: var(--dark-primary);
+.home-arnav-name {
+    background: linear-gradient(to right, var(--dark-primary), var(--dark-accent));
+    width: max-content;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.bubbles {
+    z-index: -1000;
+}
+
+.bubbles span {
+    width: 18px;
+    height: 18px;
+    background-color: var(--dark-secondary-300);
+    border-radius: 50%;
+    box-shadow: 0 0 50px 5px var(--dark-secondary-100),
+                0 0 100px 10px var(--dark-secondary-100);
+    animation: animate linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+@media screen and (min-width: 768px) {
+    .bubbles span {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.bubbles span:nth-child(even) {
+    background-color: var(--dark-primary);
+    box-shadow: 0 0 50px 5px var(--dark-primary-100),
+                0 0 100px 10px var(--dark-primary-100);
+}
+
+
+@keyframes animate {
+    0%{
+        transform: translateY(60vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-100vh) scale(1);
+    }
+}
+
+
+
+
+
+
+
+.section-header {
+    font-family: "Archivo Black";
+    position: relative;
+    width: max-content;
+}
+
+.section-header::before,
+.section-header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: var(--dark-primary);
+}
+
+.section-header::before {
+    left: 0;
+    transform: translateX(-105%);
+}
+.section-header::after {
+    right: 0;
+    transform: translateX(105%);
+}
+
+
+
+
+
+
+.download-cv {
+    transition: background-color .3s ease-in,
+                color .3s ease-in,
+                outline .3s ease-in,
+                box-shadow .3s ease-in;
+}
+
+.download-cv:hover {
+    outline: 2px solid var(--dark-primary);
+    box-shadow: 0 5px 10px var(--dark-accent-900);
 }
 
 
@@ -301,11 +399,9 @@ header ul li a {
 
 
 
-
-
-
-
-
-
+::selection {
+    background-color: var(--dark-accent-700);
+    color: var(--dark-secondary-100);
+}
 
 
