@@ -67,6 +67,7 @@ window.addEventListener("load", () => {
     loader.style.transformStyle = "all";
     loader.style.transitionDuration = "3s";
     loader.style.opacity = "0";
+    loader.style.display = "none";
 });
 
 

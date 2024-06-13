@@ -624,6 +624,22 @@ section.home {
 
 
 
+.journey-link-language {
+    opacity: 0.4;
+    background: #ffffff1d;
+    border-bottom: 2px solid #ffffff89;
+    transition: opacity 0.3s ease-in,
+                background 0.3s ease-in;
+}
+
+.journey-link-language:hover,
+.journey-link-language:focus {
+    opacity: 1;
+    background: #ffffff3a;
+}
+
+
+
 
 
 
