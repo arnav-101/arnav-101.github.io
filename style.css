@@ -593,6 +593,7 @@ section.home {
 
     border-radius: 50%;
     animation: loader 1s ease-in-out infinite alternate;
+    transition: opacity 5s ease-out;
 }
 
 .loader-bubble:first-child {
@@ -618,7 +619,9 @@ section.home {
     100% {
         transform: translateY(0);
     }
-}
+}   
+
+
 
 
 

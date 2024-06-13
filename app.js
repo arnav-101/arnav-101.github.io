@@ -64,7 +64,9 @@ hiddenElements.forEach((el) => observer.observe(el));
 const loader = document.getElementById("preloader");
 
 window.addEventListener("load", () => {
-    loader.style.display = "none";
+    loader.style.transformStyle = "all";
+    loader.style.transitionDuration = "3s";
+    loader.style.opacity = "0";
 });
 
 
